@@ -4,8 +4,9 @@ import 'package:responsive_dashboard/utils/app_styles.dart';
 import 'package:responsive_dashboard/utils/drawer_item_list.dart';
 
 class DrawerItem extends StatelessWidget {
-  const DrawerItem({super.key, required this.drawerItemModel});
+  const DrawerItem({super.key, required this.drawerItemModel, required this.isActive});
  final DrawerItemList drawerItemModel;
+ final bool isActive;
   @override
   Widget build(BuildContext context) {
     return ListTile(leading: SvgPicture.asset(drawerItemModel.image),
