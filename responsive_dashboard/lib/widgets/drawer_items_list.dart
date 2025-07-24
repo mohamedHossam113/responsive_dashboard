@@ -3,8 +3,8 @@ import 'package:responsive_dashboard/utils/constants.dart';
 import 'package:responsive_dashboard/utils/drawer_item_list.dart';
 import 'package:responsive_dashboard/widgets/drawer_item.dart';
 
-class DrawerItemsList extends StatefulWidget {
-  const DrawerItemsList({
+class DrawerItemsListView extends StatefulWidget {
+  const DrawerItemsListView({
     super.key,
   
   });
@@ -12,10 +12,10 @@ class DrawerItemsList extends StatefulWidget {
  
 
   @override
-  State<DrawerItemsList> createState() => _DrawerItemsListState();
+  State<DrawerItemsListView> createState() => _DrawerItemsListState();
 }
 
-class _DrawerItemsListState extends State<DrawerItemsList> {
+class _DrawerItemsListState extends State<DrawerItemsListView> {
   int activeIndex = 0;
 final List<DrawerItemList> items = [
   DrawerItemList(title: 'Dashboard', image: '${kConstants.shortCut}dashboard_icon.svg'),
@@ -27,8 +27,6 @@ final List<DrawerItemList> items = [
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: items.length,
-      physics: const NeverScrollableScrollPhysics(),
-      shrinkWrap: true,
       itemBuilder: (context,index){
     return GestureDetector(
       onTap: (){
@@ -38,7 +36,7 @@ final List<DrawerItemList> items = [
         });
       },
       child: Padding(
-        padding: const EdgeInsets.only(top:20.0),
+        padding: const EdgeInsets.only(top:15.0,left: 28,right: 20,bottom: 15),
         child: DrawerItem(drawerItemModel:items[index],isActive: activeIndex == index ),
       ),
     );   
