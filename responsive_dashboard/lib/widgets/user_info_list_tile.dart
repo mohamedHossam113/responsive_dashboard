@@ -16,7 +16,7 @@ class UserInfo extends StatelessWidget {
       elevation: 0,
       color: const Color(0xFFFAFAFA),
       child: ListTile(
-        leading: SvgPicture.asset('${kConstatns.shortCut}avatar_3.svg'),
+        leading: SvgPicture.asset('${kConstants.shortCut}avatar_3.svg'),
         title: Text(
           title,
           style: AppStyles.styleSemiBold16,

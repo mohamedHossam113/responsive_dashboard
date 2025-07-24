@@ -1,3 +1,3 @@
-class kConstatns {
+class kConstants {
   static const shortCut = 'assets/images/';
 }
