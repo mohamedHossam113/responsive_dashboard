@@ -30,11 +30,11 @@ class CustomDrawer extends StatelessWidget {
                 const Expanded(child: SizedBox()),
                 Padding(
                 padding: const EdgeInsets.only(right:20,left:28),
-                child: InActiveDrawerItem(drawerItemModel:DrawerItemList(title: 'System Settings',image: '${kConstants.shortCut}setting_icon.svg')),
+                child: InActiveDrawerItem(drawerItemModel:DrawerItemList(title: 'System Settings',image: '${Kconstants.shortCut}setting_icon.svg')),
               ),
               Padding(
                 padding: const EdgeInsets.only(right:20,left:25,top:10,bottom: 48),
-                child: InActiveDrawerItem(drawerItemModel:DrawerItemList(title: 'Logout Account',image: '${kConstants.shortCut}logout_icon.svg')),
+                child: InActiveDrawerItem(drawerItemModel:DrawerItemList(title: 'Logout Account',image: '${Kconstants.shortCut}logout_icon.svg')),
              
               ),
               ],

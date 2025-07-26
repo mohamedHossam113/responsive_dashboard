@@ -18,11 +18,11 @@ class DrawerItemsListView extends StatefulWidget {
 class _DrawerItemsListState extends State<DrawerItemsListView> {
   int activeIndex = 0;
 final List<DrawerItemList> items = [
-  DrawerItemList(title: 'Dashboard', image: '${kConstants.shortCut}dashboard_icon.svg'),
-  DrawerItemList(title: 'My Transactions', image: '${kConstants.shortCut}my_transactions_icon.svg'),
-  DrawerItemList(title: 'Statistics', image: '${kConstants.shortCut}statistics_icon.svg'),
-  DrawerItemList(title: 'Wallet Account', image: '${kConstants.shortCut}wallet_icon.svg'),
-  DrawerItemList(title: 'My Investments', image: '${kConstants.shortCut}investments_icon.svg')
+  DrawerItemList(title: 'Dashboard', image: '${Kconstants.shortCut}dashboard_icon.svg'),
+  DrawerItemList(title: 'My Transactions', image: '${Kconstants.shortCut}my_transactions_icon.svg'),
+  DrawerItemList(title: 'Statistics', image: '${Kconstants.shortCut}statistics_icon.svg'),
+  DrawerItemList(title: 'Wallet Account', image: '${Kconstants.shortCut}wallet_icon.svg'),
+  DrawerItemList(title: 'My Investments', image: '${Kconstants.shortCut}investments_icon.svg')
   
   ,];
   @override
