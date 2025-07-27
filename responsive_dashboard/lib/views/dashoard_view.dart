@@ -8,6 +8,7 @@ class DashoardView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: AdaptiveLayoutWidget(
           mobileLayout: (context) => const SizedBox(),
           tabletLayout: (context) => const SizedBox(),
