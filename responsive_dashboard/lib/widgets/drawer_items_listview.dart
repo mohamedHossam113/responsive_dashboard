@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/utils/constants.dart';
 import 'package:responsive_dashboard/utils/drawer_item_list.dart';
@@ -39,7 +41,7 @@ class _DrawerItemsListState extends State<DrawerItemsListView> {
           onTap: () {
             setState(() {
               activeIndex = index;
-              print(activeIndex);
+              log(activeIndex.toString());
             });
           },
           child: Padding(
