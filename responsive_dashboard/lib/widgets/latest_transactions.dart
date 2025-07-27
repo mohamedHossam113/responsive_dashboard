@@ -1,0 +1,21 @@
+import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/utils/app_styles.dart';
+import 'package:responsive_dashboard/widgets/latest_transactions_listview.dart';
+
+class LatestTransactions extends StatelessWidget {
+  const LatestTransactions({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Column(children: [
+      Text(
+        'Latest Transactions',
+        style: AppStyles.styleMedium16,
+      ),
+      SizedBox(
+        height: 16,
+      ),
+      LatestTransactionsListView(),
+    ]);
+  }
+}
